@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-ramverk</title>
+    <link rel="stylesheet" href="/src/css/bootstrap.css">
+</head>
+<body>
+    <header class="site-header border-bottom">
+        <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-md-between gap-2 py-3">
+            <a class="fs-4 fw-bold text-dark text-decoration-none" href="../../index.html">CSS-ramverk</a>
+
+            <nav aria-label="Huvudmeny">
+                <ul class="nav flex-wrap gap-1">
+                    <li class="nav-item"><a class="nav-link text-dark" href="../../index.html">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill bg-white text-dark fw-semibold" href="/src/html/bootstrap.html" aria-current="page">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="/src/html/tailwind.html">Tailwind</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="/src/html/publicering.html">Publicering</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-4 py-md-5">
+        <section class="glass-blue rounded-4 p-4 p-md-5 mb-4">
+            <h1 class="display-5 fw-bold">Bootstrap</h1>
+            <p class="lead">Välkommen till undersidan för Bootstrap!</p>
+
+            <h2 class="h4 mt-4">Om ramverket</h2>
+            <p>Bootstrap är ett CSS-ramverk med färdiga stilar för bland annat knappar, tabeller 
+                och formulär. På min Bootstrap-sida använder jag till exempel table-striped för 
+                att ge varannan rad i glassmenyn en annan bakgrund och form-control för att ge 
+                textfälten ett enhetligt utseende. Bootstraps rutnät gör också att 
+                formulärfälten kan ligga bredvid varandra på större skärmar och staplas 
+                på mobilen.</p>
+
+            <a class="btn btn-outline-dark" href="https://getbootstrap.com/">Bootstraps webbplats</a>
+        </section>
+
+        <section class="mb-4">
+            <h2 class="h3 mb-3">Utvärdering av Bootstrap</h2>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="glass-green rounded-4 p-4 h-100">
+                        <h3 class="h5">Fördelar</h3>
+                        <p class="mb-0">En fördel med Bootstrap är att jag tycker det fanns 
+                            bra och tydliga instruktioner för hur ramverket skulle användas 
+                            på deras webbplats. På webbplatsen fanns det även tydliga exempel 
+                            som visade på hur resultatet kunde forma sig vid användning av 
+                            ett visst kommando.<br>
+                            <br>
+                            Även om färgpaletten var en nackdel när jag inte använde SASS, anser 
+                            jag att det fanns en tydlig färgpalett med färgkoder. Hade jag använt 
+                            SASS istället för CSS, hade färgen varit enkel och tydlig att använda.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-md-6">
+                    <article class="glass-pink rounded-4 p-4 h-100">
+                        <h3 class="h5">Nackdelar</h3>
+                        <p class="mb-0">En nackdel som har har upplevt med Bootstrap är 
+                            att färghanteringen var lite svår att förstå. Det fanns en tydlig 
+                            färgpalett anpassad för SASS, men eftersom jag inte använde det 
+                            blev det lite komplicerat.<br>
+                            <br>
+                            En annan nackdel är att var att hanteringen för padding och margin 
+                            var svår att förstå till en början. Det fanns många olika kommandon 
+                            för att hantera dessa, vilket gjorde det svårt att lära sig vilka 
+                            kommandon som gjorde vilka ändringar.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-yellow rounded-4 p-4 p-md-5 mb-4">
+            <h2 class="h3 mb-4" id="glassmaker">Glassmaker</h2>
+
+            <div class="table-responsive rounded-3" tabindex="0" role="region" aria-labelledby="glassmaker">
+                <table class="table table-striped align-middle mb-0" aria-labelledby="glassmaker">
+                    <thead class="table-warning">
+                        <tr>
+                            <th scope="col">Glassmak</th>
+                            <th scope="col">Beskrivning</th>
+                            <th scope="col">Typ</th>
+                            <th scope="col">På menyn idag</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mintchoklad</th>
+                            <td>Kolaglass med mint och choklad</td>
+                            <td>Gräddglass</td>
+                            <td><span class="badge rounded-pill text-bg-success">Ja</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Hallon</th>
+                            <td>Syrlig hallonsorbet</td>
+                            <td>Sorbet</td>
+                            <td><span class="badge rounded-pill text-bg-success">Ja</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Mango</th>
+                            <td>Krämig mango</td>
+                            <td>Gelato</td>
+                            <td><span class="badge rounded-pill text-bg-success">Ja</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Blåbär</th>
+                            <td>Vaniljglass med blåbär</td>
+                            <td>Gräddglass</td>
+                            <td><span class="badge rounded-pill text-bg-secondary">Nej</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Kanelbulle</th>
+                            <td>Kanelglass med bitar av kanelbulle</td>
+                            <td>Gräddglass</td>
+                            <td><span class="badge rounded-pill text-bg-secondary">Nej</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="glass-green rounded-4 p-4 p-md-5">
+            <h2 class="h3 mb-3">Föreslå en glassmak</h2>
+
+            <form class="bg-white rounded-3 p-3 p-md-4">
+                <div class="row g-3">
+                    <div class="col-md-7">
+                        <label for="glassmak" class="form-label">Glassmak</label>
+                        <input type="text" id="glassmak" name="glassmak"
+                               class="form-control" required>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="typ" class="form-label">Typ</label>
+                        <select id="typ" name="typ" class="form-select" required>
+                            <option value="">Välj typ</option>
+                            <option value="gräddglass">Gräddglass</option>
+                            <option value="sorbet">Sorbet</option>
+                            <option value="gelato">Gelato</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="beskrivning" class="form-label">Beskrivning</label>
+                        <textarea id="beskrivning" name="beskrivning" rows="3"
+                                  class="form-control" required></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input type="checkbox" id="pa-menyn" name="pa-menyn"
+                                   value="ja" class="form-check-input">
+                            <label for="pa-menyn" class="form-check-label">På menyn idag</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary rounded-pill px-4">Skicka förslag</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="glass-pink border-top py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 CSS-ramverk</p>
+        </div>
+    </footer>
+</body>
+</html>

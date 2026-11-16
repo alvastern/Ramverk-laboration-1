@@ -1,0 +1,17 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.glass-pink {
+    background-color: #ff8ec1;
+}
+
+.glass-blue {
+    background-color: #a2caff;
+}
+
+.glass-yellow {
+    background-color: #ffeb88;
+}
+
+.glass-green {
+    background-color: #38d06b;
+}

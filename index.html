@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-ramverk</title>
+  <link rel="stylesheet" href="/src/css/tailwind.css">
+</head>
+
+<body class="flex min-h-screen flex-col bg-amber-50 text-slate-900">
+  <header class="bg-mauve-600 text-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6">
+      <a href="./index.html" class="text-xl font-bold">CSS-ramverk</a>
+
+      <nav aria-label="Huvudmeny">
+        <ul class="flex flex-wrap gap-1 text-sm font-semibold">
+          <li><a href="/index.html" aria-current="page" class="block rounded-full bg-pink-200 px-3 py-2 text-emerald-950">Hem</a></li>
+          <li><a href="/src/html/bootstrap.html" class="block rounded-full px-3 py-2 hover:bg-pink-200">Bootstrap</a></li>
+          <li><a href="/src/html/tailwind.html" class="block rounded-full px-3 py-2 hover:bg-pink-200">Tailwind</a></li>
+          <li><a href="/src/html/publicering.html" class="block rounded-full px-3 py-2 hover:bg-pink-200">Publicering</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto w-full max-w-6xl flex-1 space-y-8 px-4 py-8 sm:px-6 sm:py-12">
+    <section class="bg-pink-200 p-6 sm:p-10">
+      <h1 class="text-4xl font-black tracking-tight sm:text-6xl">CSS-ramverk</h1>
+      <h2 class="mt-5 text-xl font-bold">Om uppgiften</h2>
+      <p class="mt-2 max-w-2xl leading-relaxed">
+      Denna uppgiften går ut på att jag som student ska få utvärdera och lära mig om olika 
+      CSS-ramverk. Jag ska i uppgiften prova på två olika ramverk med syftet att få 
+      en överblick över vilka ramverk som finns och vilka ramverk som passar bäst för 
+      olika användningsområden.</p>
+    </section>
+
+    <section>
+      <h2 class="mb-4 text-2xl font-bold">Ramverk jag använder</h2>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <article class="flex flex-col items-start bg-slate-600 text-white p-6 sm:p-8">
+          <h3 class="text-2xl font-bold">Bootstrap</h3>
+          <p class="mb-5 mt-2 leading-relaxed">Bootstrap är ett CSS-ramverk som erbjuder enkla 
+            sätt att skapa responsiva webbplatser. Det erbjuder en mängd komponenter och klasser 
+            som gör det lätt att skapa professionella webbplatser.</p>
+          <a href="https://getbootstrap.com/" class="mt-auto rounded-full bg-mist-50 px-5 py-2.5 font-semibold text-black hover:bg-mist-300">Bootstraps webbplats</a>
+        </article>
+
+        <article class="flex flex-col items-start bg-slate-600 text-white p-6 sm:p-8">
+          <h3 class="text-2xl font-bold">Tailwind CSS</h3>
+          <p class="mb-5 mt-2 leading-relaxed">Tailwind CSS är ett CSS-ramverk som gör det enkelt 
+            att skapa responsiva webbplatser. Det erbjuder en mängd fördefinierade klasser som 
+            gör det lätt att skapa professionella webbplatser.</p>
+          <a href="https://tailwindcss.com/" class="mt-auto rounded-full bg-mist-50 px-5 py-2.5 font-semibold text-black hover:bg-mist-300">Se Tailwind-sidan</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-mauve-600 text-white">
+    <p class="mx-auto max-w-6xl px-4 py-5 sm:px-6">&copy; 2026 CSS-ramverk</p>
+  </footer>
+</body>
+</html>

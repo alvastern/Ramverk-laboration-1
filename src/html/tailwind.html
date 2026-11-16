@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-ramverk</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css">
+</head>
+
+<body class="bg-amber-50 text-slate-900">
+    <header class="bg-emerald-950 text-white">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6">
+            <a href="../../index.html" class="text-xl font-bold">CSS-ramverk</a>
+
+            <nav aria-label="Huvudmeny">
+                <ul class="flex flex-wrap gap-1 text-sm font-semibold">
+                    <li><a href="../../index.html" class="block rounded-full px-3 py-2 hover:bg-emerald-800">Hem</a></li>
+                    <li><a href="/src/html/bootstrap.html" class="block rounded-full px-3 py-2 hover:bg-emerald-800">Bootstrap</a></li>
+                    <li><a href="/src/html/tailwind.html" aria-current="page" class="block rounded-full bg-pink-200 px-3 py-2 text-emerald-950">Tailwind</a></li>
+                    <li><a href="/src/html/publicering.html" class="block rounded-full px-3 py-2 hover:bg-emerald-800">Publicering</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl space-y-8 px-4 py-8 sm:px-6 sm:py-12">
+        <section class="rounded-3xl bg-pink-200 p-6 sm:p-10">
+            <h1 class="text-4xl font-black tracking-tight sm:text-6xl">Tailwind CSS</h1>
+
+            <h2 class="mt-5 text-xl font-bold">Om ramverket</h2>
+            <p class="mt-2 max-w-2xl leading-relaxed">
+                Tailwind CSS är ett CSS-ramverk där små klasser kombineras direkt i HTML 
+                för att bygga upp utseendet. Varje klass styr en egenskap, till exempel 
+                bg-pink-200 för en ljusrosa bakgrund eller p-6 för avståndet mellan innehåll 
+                och kant. På min Tailwind-sida använder jag klasserna för att ge glassmenyn och 
+                formuläret egna färger och visa dem bredvid varandra på större skärmar.</p>
+
+            <a href="https://tailwindcss.com/" class="mt-5 inline-block rounded-full bg-emerald-950 px-5 py-2.5 font-semibold text-white hover:bg-emerald-800">Tailwinds webbplats</a>
+        </section>
+
+        <section>
+            <h2 class="mb-4 text-2xl font-bold">Utvärdering av Tailwind</h2>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <article class="rounded-2xl bg-sky-100 p-6">
+                    <h3 class="font-bold">Fördelar</h3>
+                    <p class="mt-2">En stor fördel som jag upplevde med Tailwind är att deras 
+                        sätt att definiera färger var mycket enkelt och tydligt. Det fanns ett 
+                        stort utbud av färger som var enkla att definiera i HTML-koden.<br>
+                        <br>
+                        En annan fördel är att jag upplevde att det var enklare att skapa en 
+                        visuell design som var unik. Det var enkelt att justera färger, margin, 
+                        padding etc. för att skapa något unikt.
+                    </p>
+                </article>
+
+                <article class="rounded-2xl bg-yellow-200 p-6">
+                    <h3 class="font-bold">Nackdelar</h3>
+                    <p class="mt-2">En nackdel som jag upplevde med Tailwind är att det var svårt 
+                        och komplicerat att använda det till en början. Eftersom ramverk är nytt 
+                        för mig är det väldigt mycket att ta in till, vilket gör att ramverket 
+                        upplevs som väldigt komplicerat.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <div class="grid items-start gap-6 lg:grid-cols-5">
+            <section class="min-w-0 rounded-3xl border border-amber-200 bg-white p-5 sm:p-6 lg:col-span-3">
+                <h2 id="glassmaker" class="mb-4 text-2xl font-bold">Glassmaker</h2>
+
+                <div class="overflow-x-auto rounded-xl border border-amber-200 focus-visible:outline-2 focus-visible:outline-emerald-700"
+                     tabindex="0" role="region" aria-labelledby="glassmaker">
+                    <table class="w-full min-w-[30rem] text-left text-sm" aria-labelledby="glassmaker">
+                        <thead class="bg-yellow-200">
+                            <tr class="[&>th]:px-3 [&>th]:py-3">
+                                <th scope="col">Glassmak</th>
+                                <th scope="col">Beskrivning</th>
+                                <th scope="col">Typ</th>
+                                <th scope="col">På menyn idag</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="divide-y divide-amber-100 [&_td]:px-3 [&_td]:py-3 [&_th]:px-3 [&_th]:py-3">
+                            <tr class="even:bg-amber-50">
+                                <th scope="row">Mintchoklad</th>
+                                <td>Kolaglass med mint och choklad</td>
+                                <td>Gräddglass</td>
+                                <td><span class="rounded-full bg-emerald-100 px-2 py-1 font-semibold text-emerald-900">Ja</span></td>
+                            </tr>
+                            <tr class="even:bg-amber-50">
+                                <th scope="row">Hallon</th>
+                                <td>Syrlig hallonsorbet</td>
+                                <td>Sorbet</td>
+                                <td><span class="rounded-full bg-emerald-100 px-2 py-1 font-semibold text-emerald-900">Ja</span></td>
+                            </tr>
+                            <tr class="even:bg-amber-50">
+                                <th scope="row">Mango</th>
+                                <td>Krämig mango</td>
+                                <td>Gelato</td>
+                                <td><span class="rounded-full bg-emerald-100 px-2 py-1 font-semibold text-emerald-900">Ja</span></td>
+                            </tr>
+                            <tr class="even:bg-amber-50">
+                                <th scope="row">Blåbär</th>
+                                <td>Vaniljglass med blåbär</td>
+                                <td>Gräddglass</td>
+                                <td><span class="rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700">Nej</span></td>
+                            </tr>
+                            <tr class="even:bg-amber-50">
+                                <th scope="row">Kanelbulle</th>
+                                <td>Kanelglass med bitar av kanelbulle</td>
+                                <td>Gräddglass</td>
+                                <td><span class="rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700">Nej</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="rounded-3xl bg-emerald-100 p-5 sm:p-6 lg:col-span-2">
+                <h2 class="mb-5 text-2xl font-bold">Föreslå en glassmak</h2>
+
+                <form class="space-y-4">
+                    <div>
+                        <label for="glassmak" class="mb-1 block font-semibold">Glassmak</label>
+                        <input type="text" id="glassmak" name="glassmak" required
+                               class="w-full rounded-lg border border-emerald-600 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-emerald-800">
+                    </div>
+
+                    <div>
+                        <label for="beskrivning" class="mb-1 block font-semibold">Beskrivning</label>
+                        <textarea id="beskrivning" name="beskrivning" rows="3" required
+                                  class="w-full rounded-lg border border-emerald-600 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-emerald-800"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="typ" class="mb-1 block font-semibold">Typ</label>
+                        <select id="typ" name="typ" required
+                                class="w-full rounded-lg border border-emerald-600 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-emerald-800">
+                            <option value="">Välj typ</option>
+                            <option value="gräddglass">Gräddglass</option>
+                            <option value="sorbet">Sorbet</option>
+                            <option value="gelato">Gelato</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="pa-menyn" name="pa-menyn" value="ja"
+                               class="size-4 accent-emerald-800">
+                        <label for="pa-menyn">På menyn idag</label>
+                    </div>
+
+                    <button type="submit"
+                            class="w-full rounded-full bg-emerald-950 px-5 py-3 font-semibold text-white hover:bg-emerald-800">
+                        Skicka förslag
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="border-t border-emerald-800 bg-emerald-950 text-white">
+        <p class="mx-auto max-w-6xl px-4 py-5 sm:px-6">&copy; 2026 CSS-ramverk</p>
+    </footer>
+</body>
+</html>

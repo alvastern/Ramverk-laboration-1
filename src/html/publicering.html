@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css">
+</head>
+
+<body class="flex min-h-screen flex-col bg-violet-50 text-slate-900">
+  <header class="flex flex-col gap-4 bg-indigo-950 px-5 py-5 text-white sm:px-8 lg:flex-row lg:items-center lg:justify-between">
+    <h1 class="text-xl font-bold tracking-tight">CSS-ramverk</h1>
+
+    <nav>
+      <ul class="flex flex-wrap items-center gap-2 text-sm font-semibold">
+        <li><a href="/src/html/index.html" class="block rounded-full px-3 py-2 hover:bg-indigo-800">Hem</a></li>
+        <li><a href="/src/html/bootstrap.html" class="block rounded-full px-3 py-2 hover:bg-indigo-800">Bootstrap</a></li>
+        <li><a href="/src/html/tailwind.html" class="block rounded-full px-3 py-2 hover:bg-indigo-800">Tailwind</a></li>
+        <li class="rounded-full bg-yellow-300 px-3 py-2 text-indigo-950">Publicering</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mx-auto grid w-full max-w-6xl flex-1 content-start gap-5 px-5 py-8 sm:px-8 sm:py-12 lg:grid-cols-2">
+    <h2 class="rounded-3xl bg-indigo-700 px-6 py-10 text-4xl font-black tracking-tight text-white sm:px-10 sm:py-14 sm:text-6xl lg:col-span-2">Publicering</h2>
+
+    <section class="rounded-3xl border-2 border-pink-200 bg-pink-100 p-6 sm:p-8">
+        <h3 class="mb-3 text-2xl font-bold text-indigo-950">Plattform för publicering</h3>
+
+        <p class="max-w-prose leading-relaxed">Här beskrivs vilken plattform som användes för publicering av webbpålatsen, 
+          samt hur arbetssättet för publiceringen såg ut. Plattformen som användes var 
+          Netlify. Netlify är en plattform som inte är baserad på FTP/SFTP, utan använder 
+          istället exempelvis Github för att publicera webbplatser.</p>
+    </section>
+
+    <section class="rounded-3xl border-2 border-emerald-200 bg-emerald-100 p-6 sm:p-8">
+        <h3 class="mb-3 text-2xl font-bold text-indigo-950">Arbetssätt</h3>
+
+        <p class="max-w-prose leading-relaxed">För att publicera webbplatsen via Netlify började jag med att publicera mitt projekt 
+          till Github-repository. Därefter importerade jag repositoryt till Netlify och 
+          publicerade webbplatsen. Vid publiceringen användes npm run build för att bygga 
+          de relevanta filerna som behövdes för publiceringen.</p>
+    </section>
+  </main>
+
+  <footer class="border-t border-indigo-200 bg-indigo-100 px-5 py-5 text-sm text-indigo-950 sm:px-8">
+    <h3 class="mb-1 font-bold">CSS-ramverk</h3>
+    &copy; 2026
+  </footer>
+</body>
+</html>
